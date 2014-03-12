@@ -16,7 +16,7 @@ public class CommandFactory {
 	   commandGetMostExpensive = new CommandGetMostExpensive(view);
 	   commandGetTreasureCost = new CommandGetTreasureCost(view);
 	   commandAddTreasure = new CommandAddTreasure(view);
-	   commandEmpty = new CommandEmpty(view);
+	   commandEmpty = new CommandEmpty();
    }
    /**
 	 * <p> Factory method</p>

@@ -1,17 +1,12 @@
 package com.company.lw01.businesslogic;
 
-import com.company.lw01.to.TO;
-import com.company.lw01.view.View;
-
+import com.company.lw01.transfer.TO;
 
 /**
  * Created by Valera on 7/3/14.
  */
-public class CommandEmpty extends Command {
-	public CommandEmpty(View view) {
-		super(view);
-	}
-
+public class CommandEmpty implements  Command {
+	
 	@Override
 	public void execute(TO trans)
 	{

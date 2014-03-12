@@ -4,7 +4,8 @@ import java.util.Random;
 import com.company.lw01.essence.*;
 
 import java.util.ArrayList;
-import com.company.lw01.to.*;
+
+import com.company.lw01.transfer.*;
 /**
  * Created by Valera on 7/3/14.
  */
@@ -25,14 +26,14 @@ public class View {
    {
 	   TO result;
 	   Random rand ;
-	   if (i<10)                                 
+	   if (i<10)                          //It's magic values to simulate user input     
 	   {
 		   rand = new Random();
            result = this.treasureInput( i ,  "tresuare#" + i , rand.nextInt(1000));    
 	   }  
 	   else 
 	   {
-		   if (i == 10)
+		   if (i == 10)                                
 		   {
 			   result = new TOCost(this.getCost());
 		   }
