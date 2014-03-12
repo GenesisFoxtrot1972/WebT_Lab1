@@ -2,19 +2,18 @@ package com.company.lw01.businesslogic;
 
 
 import com.company.lw01.essence.*;
-import com.company.lw01.transfer.TO;
-import com.company.lw01.transfer.TOCost;
+import com.company.lw01.to.TOCost;
+import com.company.lw01.to.TO;
 import com.company.lw01.view.View;
 import java.util.ArrayList;
 /**
  * Created by Valera on 7/3/14.
  */
-public class CommandGetTreasureCost implements  Command
+public class CommandGetTreasureCost extends Command
 {
-	private View view;
 	public CommandGetTreasureCost(View view) 
 	{
-		this.view = view;
+		super(view);
 	}
 
 	/**

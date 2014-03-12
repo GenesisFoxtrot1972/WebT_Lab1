@@ -4,19 +4,16 @@ package com.company.lw01.businesslogic;
 import java.util.ArrayList;
 
 import com.company.lw01.essence.*;
-import com.company.lw01.transfer.TO;
+import com.company.lw01.to.TO;
 import com.company.lw01.view.*;
 
 /**
  * Created by Valera on 7/3/14.
  */
-public class CommandGetMostExpensive implements  Command
-{
-	private View view;
-	
+public class CommandGetMostExpensive extends Command {
 	public CommandGetMostExpensive(View view) 
 	{
-		this.view = view;
+		super(view);
     }
 	/**
 	 * <p> Method looks for the most precious treasure</p>

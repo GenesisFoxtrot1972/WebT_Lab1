@@ -1,7 +1,7 @@
 package com.company.lw01.controller;
 
 import com.company.lw01.businesslogic.*;
-import com.company.lw01.transfer.TO;
+import com.company.lw01.to.TO;
 import com.company.lw01.view.View;
 
 /**
@@ -9,10 +9,9 @@ import com.company.lw01.view.View;
  */
 public class Controller 
 {
-	private View view;
-	private CommandFactory comFac;
+	private final View view;
+	private final CommandFactory comFac;
 
-	
 	public Controller() 
 	{
 		view = new View();
@@ -32,11 +31,5 @@ public class Controller
 			command.execute(to);
 		} while (to.operationID != 0);
 	}
-	
-    public void setView(View view)
-    {
-        this.view = view;	
-    }
-    
-    
+
 }

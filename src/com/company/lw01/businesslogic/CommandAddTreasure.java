@@ -2,17 +2,16 @@ package com.company.lw01.businesslogic;
 
 import java.util.ArrayList;
 
+import com.company.lw01.essence.Storage;
 import com.company.lw01.essence.*;
-import com.company.lw01.transfer.*;
+import com.company.lw01.to.*;
 import com.company.lw01.view.View;
 
-public class CommandAddTreasure implements Command 
+public class CommandAddTreasure  extends Command 
 {
-	private View view;
-	public CommandAddTreasure(View view)  
-	{
-    	this.view = view;
-    }
+	public CommandAddTreasure(View view) {
+		super(view);
+	}
 
 	/**
 	 * <p> Method adds treasure in the storage</p>
